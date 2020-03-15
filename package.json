@@ -1,0 +1,27 @@
+{
+    "name": "maconomymscript-lang",
+    "displayName": "MaconomyMScript",
+    "description": "Language support for Deltek Maconomy MScript",
+    "version": "0.9.0",
+    "publisher": "bsi",
+    "repository": "https://github.com/bsibsi/vscode-maconomymscript",
+    "engines": {
+        "vscode": "^1.38.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "MaconomyMScript",
+            "aliases": ["Maconomy MScript v2", "MaconomyMScript"],
+            "extensions": [".ms",".I",".lay"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "MaconomyMScript",
+            "scopeName": "source.MaconomyMScript",
+            "path": "./syntaxes/MaconomyMScript.tmLanguage"
+        }]
+    }
+}
